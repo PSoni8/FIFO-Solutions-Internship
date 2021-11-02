@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form class="form-horizontal" role="form" name="myForm" action="index.html" method="post" onsubmit="return validation()">
+            <h2>Form</h2>
+            <div class="form-group">
+                <label for="firstName" class="control-label">First Name</label>
+                <div class="col-sm-9">
+                    <input type="text" id="Name" placeholder="First Name" class="form-control" required autofocus>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="lastName" class="control-label">Last Name</label>
+                <div class="col-sm-9">
+                    <input type="text" id="Name" placeholder="Last Name" class="form-control" name= "lastName" autofocus required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="customerName" class="control-label">Customer Name</label>
+                <div class="col-sm-9">
+                    <select type="text" name="customerName" placeholder="Customer Name" class="name" id="customerName" autofocus required>
+                        <option value="" disabled selected hidden>Customer Name</option>
+                        <option value="H1B outside USA">1</option>
+                        <option value="H1B USA Transiter">2</option>
+                      </select> 
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="Location" class="control-label">Location</label>
+                <div class="col-sm-9">
+                    <input type="text" id="Location" placeholder="Location" class="form-control" autofocus required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="type" class="control-label">Type</label>
+                <div class="col-sm-9">
+                    <input type="text" id="type" placeholder="Type" class="form-control" autofocus required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="rate" class="control-label">Rate</label>
+                <div class="col-sm-9">
+                    <input type="number" id="rate" placeholder="Rate" class="form-control" autofocus required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="discount" class="control-label">Discount</label>
+                <div class="col-sm-9">
+                    <input type="number" id="discount" placeholder="Discount" class="form-control" autofocus required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="actual" class="control-label">Actual</label>
+                <div class="col-sm-9">
+                    <input type="number" id="actual" placeholder="Actual" class="form-control" autofocus required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="Percent" class="control-label">Percent</label>
+                <div class="col-sm-9">
+                    <input type="number" id="Percent" placeholder="Percent" class="form-control" autofocus required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="payRate" class="control-label">Pay Rate</label>
+                <div class="col-sm-9">
+                    <input type="number" id="payRate" placeholder="Pay Rate" class="form-control" autofocus required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="hours" class="control-label">Hours</label>
+                <div class="col-sm-9">
+                    <input type="number" id="hours" placeholder="Hours" class="form-control" autofocus required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="invAmount" class="control-label">Inv Amount</label>
+                <div class="col-sm-9">
+                    <input type="number" id="invAmount" placeholder="Inv Amount" class="form-control" autofocus required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="Amount" class="control-label">Amount</label>
+                <div class="col-sm-9">
+                    <input type="number" id="Amount" placeholder="Amount" class="form-control" autofocus required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="Medical" class="control-label">Medical</label>
+                <div class="col-sm-9">
+                    <input type="text" id="Medical" placeholder="Medical" class="form-control" autofocus required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="billAmount" class="control-label">Bill Amount</label>
+                <div class="col-sm-9">
+                    <input type="number" id="billAmount" placeholder="Bill Amount" class="form-control" autofocus required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="denta" class="control-label">Denta</label>
+                <div class="col-sm-9">
+                    <input type="text" id="denta" placeholder="Denta" class="form-control" autofocus required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="IMG" class="control-label">IMG</label>
+                <div class="col-sm-9">
+                    <input type="text" id="IMG" placeholder="IMG" class="form-control" autofocus required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="other" class="control-label">Other</label>
+                <div class="col-sm-9">
+                    <input type="text" id="other" placeholder="Other" class="form-control" autofocus required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="gross" class="control-label">Gross</label>
+                <div class="col-sm-9">
+                    <input type="text" id="gross" placeholder="Gross" class="form-control" autofocus required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="lca" class="control-label">LCA</label>
+                <div class="col-sm-9">
+                    <input type="text" id="lca" placeholder="LCA" class="form-control" autofocus required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="difference" class="control-label">Difference</label>
+                <div class="col-sm-9">
+                    <input type="number" id="difference" placeholder="Difference" class="form-control" autofocus required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="balance" class="control-label">Balance</label>
+                <div class="col-sm-9">
+                    <input type="number" id="balance" placeholder="Balance" class="form-control" autofocus required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="lastYear" class="control-label">Last Year</label>
+                <div class="col-sm-9">
+                    <input type="number" id="lastYear" placeholder="lastYear" class="form-control" autofocus required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="title" class="control-label">Title</label>
+                <div class="col-sm-9">
+                    <input type="text" id="title" placeholder="Title" class="form-control" autofocus required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="occupationCode" class="control-label">Occupation Code</label>
+                <div class="col-sm-9">
+                    <input type="text" id="occupationCode" placeholder="Occupation Code" class="form-control" autofocus required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="client" class="control-label">Client</label>
+                <div class="col-sm-9">
+                    <input type="text" id="client" placeholder="Client" class="form-control" autofocus required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="clientLocation" class="control-label">Client Location</label>
+                <div class="col-sm-9">
+                    <input type="text" id="clientLocation" placeholder="Client Location" class="form-control" autofocus required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="salary" class="control-label">Salary</label>
+                <div class="col-sm-9">
+                    <input type="number" id="salary" placeholder="Salary" class="form-control" autofocus required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="lcaNumber" class="control-label">LCA Number</label>
+                <div class="col-sm-9">
+                    <input type="text" id="lcaNumber" placeholder="LCA Number" class="form-control" autofocus required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="receiptNumber" class="control-label">Receipt Number</label>
+                <div class="col-sm-9">
+                    <input type="text" id="receiptNumber" placeholder="Receipt Number" class="form-control" autofocus required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="startingdate" class="control-label">Starting Validity Date</label>
+                <div class="col-sm-9">
+                    <input type="date" id="startingdate" placeholder="Starting Validity Date" class="form-control" autofocus required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="endingdate" class="control-label">Ending Validity Date</label>
+                <div class="col-sm-9">
+                    <input type="date" id="endingdate" placeholder="Ending Validity Date" class="form-control" autofocus required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="I94" class="control-label">I94 #</label>
+                <div class="col-sm-9">
+                    <input type="text" id="I94" placeholder="I94 #" class="form-control" autofocus required>
+                </div>
+            </div>
+            <button type="submit" class="btn">Submit</button>
+            </form> 
+</body>
+</html>

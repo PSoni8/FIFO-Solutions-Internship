@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Pacifico&family=Righteous&family=Roboto&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,800,900&display=swap');
+/*body{
+  font-family: 'montserrat' sans-serif;
+  overflow-x: hidden;
+}*/
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  overflow-x: hidden;
+}
+.container{
+  max-width: 700px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+.wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-width: 450px;
+  width: 100%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 5px;
+
+}
+.wrapper .icon {
+  position: absolute;
+  padding: 13px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+.wrapper i {
+  position: absolute;
+  padding: 13px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+.wrapper h2{
+  font-family: "veradana";
+  text-align: center;
+  margin-bottom: 20px;
+  color: orange;
+}
+
+.wrapper .input_field{
+  margin-bottom: 10px;
+}
+.wrapper .input_field input[type="text"],
+.wrapper textarea{
+  border: 1px solid #2E4053;
+  width: 100%;
+  padding: 10px;
+  padding-left:3rem;
+}
+a:hover{
+  color:green;
+  text-decoration: none;
+}
+.wrapper .input_field input[type="email"],
+.wrapper textarea{
+  border: 1px solid #2E4053;
+  width: 100%;
+  padding: 10px;
+  padding-left:3rem;
+}
+a:hover{
+  color:green;
+  text-decoration: none;
+}
+.wrapper .input_field input[type="tel"],
+.wrapper textarea{
+  border: 1px solid #2E4053;
+  width: 100%;
+  padding: 10px;
+  padding-left:3rem;
+}
+a:hover{
+  color:green;
+  text-decoration: none;
+}
+.wrapper .btn input[type="submit"]{
+  font-family: "Raleway" bold;
+  border: 0px;
+  margin-top: 15px;
+  padding: 10px;
+  text-align: center;
+  width: 190%;
+  background: #657008;
+  color:white;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 90%;
+}
+
+#error_message{
+  margin-bottom: 20px;
+  background: #fe8b8e;
+  padding: 0px;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}

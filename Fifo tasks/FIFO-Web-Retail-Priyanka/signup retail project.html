@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="signup retail project.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+      <div class="ex">
+        <div class="reg">
+          <h1>Signup</h1>
+         <form id="reg" action="/jobseekerreg" method="post" autocomplete="off" onsubmit="return validation()">
+          <div class="loc">
+            <label>User name:</label><br>
+            <input type="text" name="fname" placeholder="user name" class="form-control" class="name" id="fuser">
+            <span id="usernamef" class="text-danger font-weight-bold"></span>
+         </div>
+        <div class="loc">
+          <label>Email:</label><br>
+          <input type="email" name="email" placeholder="Email" class="form-control" class="name" id="email">
+          <span id="emailids" class="text-danger font-weight-bold"></span>
+        </div>
+        <div class="loc">
+          <label>Password:</label><br>
+          <input type="text" name="password" placeholder="Password" class="form-control" class="name" id="pass">
+          <span id="passids" class="text-danger font-weight-bold"></span>
+        </div>
+        <div class="loc">
+          <label>Confirm Password:</label><br>
+          <input type="text" name="cpass" placeholder="Confirm Password" class="form-control" class="name" id="cpass">
+          <span id="cpassids" class="text-danger font-weight-bold"></span>
+        </div>
+         <button type="submit" class="form-control" id="sub">Signup</button>
+        </form>
+      </div>
+    </div>
+    <script type="text/javascript">
+        function validation()
+         {
+           var fuser=document.getElementById('fuser').value;
+           var emails=document.getElementById('email').value;
+           var password=document.getElementById('pass').value;
+           var cpassword=document.getElementById('cpass').value;
+               if(fuser == ""){
+                      document.getElementById('usernamef').innerHTML="please enter name ";
+                      return false;
+                }
+                if((fuser.length <= 2) || (fuser.length>20)){
+                      document.getElementById('usernamef').innerHTML="name length must be in between 2 to 20";
+                      return false;
+                }
+                if(!isNaN(fuser)){
+                      document.getElementById('usernamef').innerHTML="please enter only characters";
+                      return false;
+                }
+                if(emails == ""){
+                      document.getElementById('emailids').innerHTML="please enter email address";
+                      return false;
+                }
+                if(emails.indexOf('@') <= 0){
+                      document.getElementById('emailids').innerHTML="email should not start with @";
+                      return false;
+                }
+                if((emails.charAt(emails.length-4)!='.') && (emails.charAt(emails.length-3)!='.')){
+                      document.getElementById('emailids').innerHTML="Please enter valid email .";
+                      return false;
+                }
+                if((emails.charAt(emails.length-3)!='c') && (emails.charAt(emails.length-2)!='c')){
+                      document.getElementById('emailids').innerHTML="Please enter valid email .c";
+                      return false;
+                }
+                if(emails.charAt(emails.length-2)!='o'){
+                      document.getElementById('emailids').innerHTML="Please enter valid email .o";
+                      return false;
+                }
+                if(emails.charAt(emails.length-1)!='m'){
+                      document.getElementById('emailids').innerHTML="Please enter valid email .m";
+                      return false;
+                }
+                if(password.length < 6){
+                  document.getElementById('passids').innerHTML="Password length must be atleast 6";
+                  return false;
+                }
+                if(cpassword.length < 6||cpassword!==password){
+                  document.getElementById('cpassids').innerHTML="Please Enter above password";
+                  return false;
+                  }
+            }
+       </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $(function(){
+      var navbar= $('.header-inner');
+      $(window).scroll(function(){
+        if($(window).scrollTop() <=40 ){
+          navbar.removeClass('navbar-scroll');
+        }else{
+          navbar.addClass('navbar-scroll');
+        }
+      });
+    });
+  </script>
+    </body>
+    </html>

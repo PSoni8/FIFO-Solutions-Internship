@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Pacifico&family=Righteous&family=Roboto&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,800,900&display=swap');
+body{
+  font-family: 'montserrat' sans-serif;
+}
+.nav-link{
+  font-size:20px;
+  margin-right: 20px;
+}
+.nav-link:hover{
+  color:#89CFF0 !important ;
+}
+.active .nav-link{
+  color:#89CFF0 !important;
+}
+.emp{
+  color:gray;
+  font-size: 40px;
+  right: 0;
+}
+.emp:hover{
+  color:#89CFF0 !important;
+}
+ .header{
+   position: relative;
+   width: 100%;
+ }
+ .header-inner{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: 99;
+   background-color: white;
+ }
+ .logo{
+   width: 40%;
+   border-width: 20px;
+   color: #ffffff;
+ }
+ .nav-item .nav-link{
+   display: block;
+   line-height: 36px;
+   text-transform: capitalize;
+   font-size: 16px;
+   font-weight: 500;
+   color: black;
+   transition: 0.15s;
+ }
+ .nav-item .nav-link:hover{
+   color: #FE4066;
+ }
+ .navbar-scroll{
+   background-color: #ffffff;
+   padding: 0;
+   position: fixed;
+   top: 0;
+   z-index:99;
+   box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+   transition-duration: 0.6s;
+ }
+ .navbar-scroll .nav-item .nav-link{
+   color: black;
+ }
+ .navbar-scroll .header-btn{
+   color: #ffffff;
+   background-color: #fe4066;
+ }
+ .navbar-scroll .logo{
+   color: #000;
+   font-weight: 500;
+ }
+@media only screen and (min-width:1200){
+  .nav-item > .nav-link{
+    padding: 5px 20px !important;
+    display: block !important;
+  }
+}
+@media only screen and (max-width:992px){
+  .header-inner{
+    background-color: white !important;
+    }
+    .nav-item > .nav-link{
+      color: black !important;
+    }
+    .logo{
+      color: #000 !important;
+      font-weight: 600!important;
+    }
+
+}
+/*form*/
+section{
+  /*background:url("img/jeshoots-com-pUAM5hPaCRI-unsplash.jpg") no-repeat center fixed;*/
+  background:url("image.jpg") no-repeat center fixed;
+  background-size: cover;
+  background-size: 1900px;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  display: flex;
+  font-family: sans-serif;
+  position:relative;
+  padding:150px 100px 100px;
+  width: 100%;
+  background-position: center;
+  display: flex;
+}
+
+h1{
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.reg h2{
+  color: white;
+  text-align: center;
+  margin: 40px 10px;
+}
+.loc{
+  margin-top: 10px;
+}
+#resume{
+  background-color:#FFFFFF;
+}
+label{
+  color: #FFFFFF;/*white;*/
+ font-size: 20px;
+}
+.reg{
+  width:800px;
+  height:100%;
+  margin:auto;
+  background-color: rgb(0,0,0,0.4);
+  padding: 10px;
+}
+#reg{
+  width:400px;
+  margin:auto;
+
+}
+.name{
+  width: 400px;
+  outline:0;
+  padding: 5px;
+  border:1px groove;
+}
+#ma{
+  color: white;
+ font-size: 20px;
+}
+#ch{
+  color: white;
+ font-size: 20px;
+}
+#sub{
+  width: 300px;
+  outline:0;
+  padding: 5px;
+  border:1px solid gray;//groove;
+  color: white;
+  font-size: 20px;
+  background-color: #487948;
+  margin-left: 40px;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}

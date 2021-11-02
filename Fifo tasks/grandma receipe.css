@@ -1,0 +1,559 @@
+html, body {width: auto!important; overflow-x: hidden!important}
+div {
+    display: block;
+  }
+  body {
+  
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    overflow-x: hidden;
+  }
+  #masthead {
+    display: grid;
+    grid-template-columns: 150px auto;
+    grid-column-gap: 2%;
+    grid-template-rows: 115px auto;
+  }
+  #masthead {
+    border-top: 10px solid #657008;
+  }
+  
+  #masthead .site-branding {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  #masthead #top-bar {
+    padding: 5px 0;
+    border-bottom: 1px solid #e3e3e3;
+  }
+  #top-bar {
+    position: relative;
+  }
+  
+  
+  #store-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+  .nav {
+    /* display: flex;
+    padding-left: 0;
+    margin-bottom: 0; */
+    list-style: none;
+    flex-wrap: wrap;
+  }
+  ol, ul, dl {
+    margin-top: 0;
+    
+  }
+  
+  .navbar-brand{
+    font-size: 1.40625rem;
+    line-height: inherit;
+    white-space: nowrap;
+  }
+  img {
+    vertical-align: middle;
+    border-style: none;
+  }
+  
+  
+  ul {
+    
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+  }
+  #masthead #top-bar ul li {
+    text-align: center;
+  }
+  
+  #masthead #top-bar ul li a {
+    color: #666;
+    text-transform: uppercase;
+  }
+  .search-toggle {
+    cursor: pointer;
+  }
+  li {
+    display: list-item;
+  
+  }
+  #masthead .navbar.primary {
+    justify-content: flex-end;
+  }
+  .navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: .5rem 1rem;
+  }
+  .navbar-light .navbar-toggler {
+    color: rgba(0,0,0,0.5);
+    border-color: rgba(0,0,0,0.1);
+  }
+  
+  .navbar-toggler {
+    padding: .25rem .75rem;
+    font-size: 1.40625rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0;
+  }
+  button, input {
+    overflow: visible;
+  }
+  button{
+    margin: 0;
+    font-family: inherit;
+  }
+  .navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    content: "";
+    background: no-repeat center center;
+    background-size: 100% 100%;
+  }
+  
+  button{
+    text-transform: none;
+  }
+  
+  
+  #masthead .menu-mobile-navigation {
+    grid-column: span 2;
+  }
+  .collapse:not(.show) {
+    display: none;
+  }
+  
+  .navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+  }
+  
+  
+  #masthead .navbar-nav li a {
+    font-weight: bold;
+    /* margin-left: 100px; */
+  }
+  #masthead .navbar-nav li a {
+    font-weight: bold;
+  }
+  
+  .navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  #single-wrapper article {
+    padding-top: 50px;
+}
+  .nav-link {
+    display: block;
+    padding: .5rem 1rem;
+  }
+  a {
+    color: #657008;
+    text-decoration: none;
+    background-color: transparent;
+  }
+  
+  @media (min-width: 1200px){
+    #masthead .navigation {
+    width: 100%;
+  }
+  }
+  
+  @media (min-width: 1200px){
+  #masthead .navigation #top-bar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: .7rem;
+    color: #666;
+  }
+  }
+  
+  @media (min-width: 1200px){
+  #masthead #top-bar {
+    padding: 0;
+    border: 0;
+  }
+  }
+  
+  @media (min-width: 1200px){
+  #masthead {
+    display: flex;
+    justify-content: space-around;
+    padding: .5rem 2rem;
+  }
+  }
+  
+  
+  #top-bar {
+    position: relative;
+  }
+  @media (min-width: 1200px){
+  #masthead .navigation nav.primary {
+    border-top: 1px solid #e3e3e3;
+    justify-content: flex-start;
+    padding: 1rem 0;
+  }
+  }
+  @media (min-width: 1200px){
+  .navbar-expand-xl {
+    flex-flow: row nowrap;
+  }
+  }
+  
+  @media (min-width: 1200px){
+  #masthead .navigation nav.primary li a {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #657008;
+    font-size: 1.4rem;
+  }
+  }
+  
+  @media (min-width: 1200px){
+  #masthead .navigation nav.primary li:first-child a {
+    padding-left: 0;
+  }
+  }
+  
+  .d-xl-none{
+    display: visible !important;
+    visibility: hidden !important;
+  }  
+  
+  .d-none{
+    display: block !important;
+    visibility: visible !important;
+  }  
+.first{
+    min-height: 200px;
+    background-image: url('https://texasoliveranch.com/wp-content/uploads/2019/09/51923367_m.jpg');
+    background-size:cover;
+    background-position: center;
+    min-width: 100%;
+    margin-bottom: 20px;
+  }
+  .hhh{
+    font-style: italic;
+    font-weight: 40px;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+  }
+  .chef{
+    z-index: 2;
+    padding-top: 70px;
+  }
+  .main{
+  margin-left: 50px;
+  margin-right: 50px;
+  }
+  .h1{
+      text-align: left;
+      font-size: 2.5rem;
+  }
+  .para{
+      color: #657008;
+      font-size: 20px;
+  }
+  hr{
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      border: 0;
+      border-top: 1px solid rgba(0,0,0,0.1);
+      box-sizing: content-box;
+      height: 0;
+      overflow: visible;
+  }
+  .img{
+    margin-bottom: 20px;
+    width: 600px;
+  }
+  .hr1{
+      margin-left: 8rem;
+  }
+  .content{
+      font-family: "museo_sans_300";
+      font-size: 1.3rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #212529;
+      text-align: left;
+  }
+  .h2{
+      font-family: "museo_sans_300";
+      text-transform: uppercase;
+      font-size: 35px;
+  }
+  h3{
+      font-size: 22px;
+  }
+  a{
+      color: #a9b80d;
+      text-decoration: none;
+      background-color: transparent;
+      font-size: 18px;
+  }
+  .section-2{
+    min-height: 1100px;
+  }
+  .image{
+    display: inline !important;
+    width: 50% ;
+    float: left;
+  }
+  .con-1{
+    display: inline !important;
+    width: 50%;
+    float: left;
+    margin-left: 50px;
+  }
+  @media(max-width:700px){
+    .image{
+      display: inline !important;
+      width: 100% ;
+      float: left;
+    }
+    .con-1{
+      display: inline !important;
+      width: 100%;
+      float: left;
+    } 
+  }
+  .link1{
+      margin-right: 100px;
+  }
+  .link2{
+      margin-left: 100px;
+  }
+  .foot{
+    display: inline-block;
+  }
+  .foot1{
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 130px;
+    height: 100px;
+  }
+  .foot2{
+    text-align: center;
+    font-family: "museo_sans_300";
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #a9b80d;
+  }
+  .third{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .head{
+    font-family:"poppins";
+      font-weight: bold;
+      color: black bold;
+      font-size: 1.3rem;
+      width:70%;
+    margin-top: 2rem;
+  }
+  .fourth{
+      background-image: url('../images/land.jpg');
+      background-size: cover;
+      background-position: top;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+      max-height: 300px;
+  }
+  .form-div{
+    font-size: 0.9rem;
+      width: 40rem;
+      height: 3rem;
+  }
+  .form-input{
+      text-align: center;
+      margin-top: 2rem;
+      margin-left: 30rem;
+      background-color:#657008;
+      color: white;
+      font-size: 1.6rem;
+      width: 10rem;
+      height: 2.7rem;
+  }
+  .fifth{
+    background-color: #152F4F;
+    max-height: 500px;
+    min-width: 100%;
+  }
+  .row1 ul , .row2 ul , .row3 ul{
+    list-style-type: none;
+  }
+  li a{
+    font-size: 1.6rem;
+    color: white;
+    transition: color .2s;
+  }
+    &:hover{
+      text-decoration:none;
+      color:#4180CB;
+      }
+  .row1 {
+        float:left; 
+        width:33.33%;
+        height:250px;
+    }
+  .row2{
+        float:left;
+        width:33.33%;
+        height:250px;
+    }
+  .row3{
+        float:right;
+        width:33.33%;
+        height:250px;
+    }
+    .social-head{
+      color: #98a80e;
+      font-size: 30px;
+    }
+    @media (min-width:480px) and (max-width: 1100px){
+      .first{
+        margin-top: 100px;
+      }
+      .img{
+        width: 100%;
+      }
+      .content{
+        font-family: "museo_sans_300";
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        text-align: left;
+    }
+    }
+  @media (max-width: 480px) {
+    .first{
+      margin-top: 200px;
+    }
+      .main{
+          margin-left: 10px;
+          margin-right: 10px; 
+      }
+      .h1{
+        text-align: left;
+        font-size: 1.5rem;
+    }
+    .para{
+      color: #657008;
+      font-size: 15px;
+     }  
+      .img{
+        width: 100%;
+      }
+      .div1{
+          max-width: 450px;
+      }     
+      .head{
+        font-family:"poppins";
+        color: black bold;
+        font-size: 1rem;
+        margin-top: 0rem;
+        font-weight: normal;
+        width:40%;
+        text-align: left;
+        width: 100%;
+      }
+      .fourth{
+        min-width: 100%;
+        align-items: baseline;
+      }
+       .fifth{
+        min-width: 100%;
+      }
+      .form-div{
+        max-width: 270px;
+        margin-left: 0px;
+      }
+      .form-input{
+      text-align: center;
+      margin-top: 2rem;
+      margin-left: 9rem;
+      background-color:#657008;
+      color: white;
+      font-size: 1.6rem;
+      width: 7rem;
+      height: 2.7rem;
+      }
+      li a{
+        font-size: 0.8rem;
+      }
+      .row1  .row2  .row3 {
+        float:left; 
+        width:50%;
+        height:400px;
+      }
+  }
+  @media (max-width:360px){
+    li a{
+      font-size: 0.6rem;
+      ]
+  }
+  @media (max-width:715px) and (min-width:480px){
+    .head{
+      font-family:"poppins";
+      color: black bold;
+      font-size: 1rem;
+      margin-top: 0rem;
+      font-weight: normal;
+      width:40%;
+      text-align: left;
+      width: 100%;
+    }
+    .fourth{
+      min-width: 100%;
+      align-items: baseline;
+    }
+     .fifth{
+      min-width: 100%;
+    }
+    .form-div{
+      max-width: 270px;
+      margin-left: 0px;
+    }
+    .form-input{
+    text-align: center;
+    margin-top: 2rem;
+    margin-left: 9rem;
+    background-color:#657008;
+    color: white;
+    font-size: 1.6rem;
+    width: 7rem;
+    height: 2.7rem;
+    }
+  }
+
+  
+  

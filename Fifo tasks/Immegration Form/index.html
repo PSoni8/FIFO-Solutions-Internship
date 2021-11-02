@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form class="form-horizontal" role="form" name="myForm" action="index.html" method="post" onsubmit="return validation()">
+            <h2>Immegration Amounts</h2>
+            <div class="form-group">
+                <label for="firstName" class="control-label">First Name</label>
+                <div class="col-sm-9">
+                    <input type="text" id="Name" placeholder="First Name" class="form-control" required autofocus>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="lastName" class="control-label">Last Name</label>
+                <div class="col-sm-9">
+                    <input type="text" id="Name" placeholder="Last Name" class="form-control" name= "lastName" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="Location" class="control-label">Location</label>
+                <div class="col-sm-9">
+                    <input type="text" id="Location" placeholder="Location" class="form-control" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="caseType" class="control-label">Case Type</label>
+                <div class="col-sm-9">
+                    <select type="text" name="caseType" placeholder="Case Type" class="name" id="caseType" required>
+                        <option value="" disabled selected hidden>Case Type</option>
+                        <option value="H1B outside USA">H1B outside USA</option>
+                        <option value="H1B USA Transiter">H1B USA Transiter</option>
+                        <option value="H1B Extension">H1B Extension</option>
+                        <option value="H1B Amendment">H1B Amendment</option>
+                      </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="uscisFee" class="control-label">USCIS Fee</label>
+                <div class="col-sm-9">
+                    <input type="number" id="uscisFee" placeholder="USCIS Fee" class="form-control" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="acwiaFee" class="control-label">ACWIA Fee</label>
+                <div class="col-sm-9">
+                    <input type="number" id="acwiaFee" placeholder="ACWIA Fee" class="form-control" autofocus required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="fdnsFee" class="control-label">FDNS Fee</label>
+                <div class="col-sm-9">
+                    <input type="number" id="fdnsFee" placeholder="FDNS Fee" class="form-control" autofocus required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="Premium" class="control-label">Premium</label>
+                <div class="col-sm-9">
+                    <input type="text" id="Premium" placeholder="Premium" class="form-control" autofocus required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="attroneyFee" class="control-label">Attroney Fee</label>
+                <div class="col-sm-9">
+                    <input type="number" id="attroneyFee" placeholder="Attroney Fee" class="form-control" autofocus required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="educationEvalution" class="control-label">Education Evalution</label>
+                <div class="col-sm-9">
+                    <input type="text" id="educationEvalution" placeholder="Education Evalution" class="form-control" autofocus required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="opinionLetter" class="control-label">Opinion Letter</label>
+                <div class="col-sm-9">
+                    <input type="text" id="opinionLetter" placeholder="Opinion Letter" class="form-control" autofocus required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="h4Fee" class="control-label">H4 Fee</label>
+                <div class="col-sm-9">
+                    <input type="number" id="h4Fee" placeholder="H4 Fee" class="form-control" autofocus required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="h4Attroney" class="control-label">H4 Attroney</label>
+                <div class="col-sm-9">
+                    <input type="text" id="h4Attroney" placeholder="H4 Attroney" class="form-control" autofocus required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="fermLabourFee" class="control-label">Ferm Labour Fee</label>
+                <div class="col-sm-9">
+                    <input type="number" id="fermLabourFee" placeholder="Ferm Labour Fee" class="form-control" autofocus required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="I-140uscisFee" class="control-label">I-140 USCIS Fee</label>
+                <div class="col-sm-9">
+                    <input type="number" id="I-140uscisFee" placeholder="I-140 uscis Fee" class="form-control" autofocus required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="attroneyFee" class="control-label">Attroney Fee</label>
+                <div class="col-sm-9">
+                    <input type="number" id="attroneyFee" placeholder="Attroney Fee" class="form-control" autofocus required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="Premium" class="control-label">Premium</label>
+                <div class="col-sm-9">
+                    <input type="text" id="Premium" placeholder="Premium" class="form-control" autofocus required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="opinionLetter" class="control-label">Opinion Letter</label>
+                <div class="col-sm-9">
+                    <input type="text" id="opinionLetter" placeholder="Opinion Letter" class="form-control" autofocus required>
+                </div>
+            </div>
+            <button type="submit" class="btn">Submit</button>
+            </form> 
+</body>
+</html>

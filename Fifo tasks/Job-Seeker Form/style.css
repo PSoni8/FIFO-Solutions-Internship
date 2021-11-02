@@ -1,0 +1,60 @@
+body{
+  background-color: #0ac9f8;
+}
+h1{
+  color: black;
+  text-align: center;
+  padding: 5px;
+}
+.reg h2{
+  font-size: 25px;
+  color: rgba(255, 255, 255, 0.836);
+  text-align: center;
+  margin: 5px 5px;
+}
+.loc{
+  margin-top: 2px;
+}
+#resume{
+  background-color:#ffffffe1;
+}
+label{
+color: black;
+font-size: 15px;
+}
+.reg{
+  width:500px;
+  height:100%;
+  margin:auto;
+  padding: 5px;
+}
+#reg{
+  width:300px;
+  margin:auto;
+}
+.name{
+  width: 300px;
+  outline:0;
+  padding: 5px;
+  border:1px groove;
+}
+#ma{
+  color: white;
+ font-size: 10px;
+}
+#ch{
+  color: white;
+ font-size: 10px;
+}
+#sub{
+  width : 200px;
+  outline : 0;
+  padding : 5px;
+  border :1px solid rgb(155, 15, 15);
+  color : white;
+  font-size : 15px;
+  background-color : blue;
+  margin-left : 40px;
+  margin-bottom : 50px;
+  margin-top : 30px;
+}

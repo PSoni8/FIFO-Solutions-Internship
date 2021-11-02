@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Form</title>
+      <link rel="icon" href="img/favicon.png">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+      <div class="ex">
+        <h1>JOB SEEKER</h1>
+        <div class="reg">
+         <form id="reg" action="/jobseekerreg" method="post" autocomplete="off" onsubmit="return validation()">
+          <h2>Personal details</h2>
+          <div class="loc">
+            <label>First name:</label><br>
+            <input type="text" name="fname" placeholder="First name" class="form-control" class="name" id="fuser">
+            <span id="usernamef" class="text-danger font-weight-bold"></span>
+         </div>
+         <div class="loc">
+            <label>Last name:</label><br>
+            <input type="text" name="lname" placeholder="Last name" class="form-control" class="name" id="luser">
+            <span id="usernamel" class="text-danger font-weight-bold"></span>
+         </div>
+        <div class="loc">
+          <label>Email:</label><br>
+          <input type="email" name="email" placeholder="Email" class="form-control" class="name" id="email">
+          <span id="emailids" class="text-danger font-weight-bold"></span>
+        </div>
+        <div class="loc">
+          <label>Password:</label><br>
+          <input type="text" name="password" placeholder="Password" class="form-control" class="name" id="pass">
+          <span id="passids" class="text-danger font-weight-bold"></span>
+        </div>
+        <div class="loc">
+          <label>Confirm Password:</label><br>
+          <input type="text" name="cpass" placeholder="Confirm Password" class="form-control" class="name" id="cpass">
+          <span id="cpassids" class="text-danger font-weight-bold"></span>
+        </div>
+        <div class="loc">
+          <label>Mobile number:</label><br>
+          <input type="number" name="mobile" placeholder="mobile number" class="form-control" class="name" id="mobileno">
+          <span id="mobiles" class="text-danger font-weight-bold"></span>
+        </div>
+        <div class="loc">
+          <label>Current location:</label><br>
+          <input type="text" name="location" placeholder="Current location" class="form-control" class="name" id="currentloc">
+          <span id="locationerr" class="text-danger font-weight-bold"></span>
+        </div>
+        <div class="loc">
+          <label>Date of birth:</label><br>
+          <input type="date"  name="date" class="name" id="name"><br><br>
+        </div>
+        <h2>Profession</h2>
+        <div class="loc">
+          <label>Job title:</label><br>
+          <input type="text" name="title" placeholder="Job title" class="form-control" class="name" id="jobt">
+          <span id="joberr" class="text-danger font-weight-bold"></span>
+        </div>
+        <div class="loc">
+          <label>Experience:</label><br>
+          <input type="number" name="experience" placeholder="Experience" class="form-control" class="name" id="exp">
+          <span id="experr" class="text-danger font-weight-bold"></span>
+        </div>
+        <div class="loc">
+          <label>Resume:</label><br>
+          <input type="file" name="resume"  id="resume" accept=".pdf" placeholder="Resume" class="form-control" class="name" autocomplete="off">
+          <span id="resumes" class="text-danger font-weight-bold"></span>
+        </div>
+        <div class="loc">
+          <label>Desired salary:</label><br>
+          <input type="number" name="salary" placeholder="Enter salary" class="form-control" class="name" id="sal">
+          <span id="salaryerr" class="text-danger font-weight-bold"></span>
+        </div>
+        <h2>Ideal job</h2>
+        <div class="loc">
+          <label>Employment type:</label><br>
+        <!--  <input type="text" name="employment" placeholder="Enter employment type" class="name" id="emptype"><br><br>-->
+          <select type="text" name="employment" placeholder="Enter employment type" class="form-control" class="name" id="emptype">
+            <option value="" disabled selected hidden>Select option</option>
+            <option value="full">Full Time</option>
+            <option value="part">Part Time</option>
+            <option value="contract">Contract</option>
+            <option value="third">Third Party</option>
+          </select>
+         <span id="emptypeerr" class="text-danger font-weight-bold"></span>
+        </div>
+        <div class="loc">
+          <label>Willing to relocate:</label><br>
+          <!--<input type="text" name="relocate" placeholder="Willing to relocate" class="name" id="reloc">-->
+          <select type="text" name="relocate" placeholder="Willing to relocate" class="form-control" class="name" id="reloc">
+            <option value="" disabled selected hidden>Select option</option>
+            <option value="yes">Yes</option>
+              <option value="no">No</option>
+          </select>
+          <span id="relocateerr" class="text-danger font-weight-bold"></span>
+         </div>
+         <div class="loc">
+          <label>Visa status:</label><br>
+        <!--  <input type="text" name="visa" placeholder="Enter visa status" class="name" id="visas"><br><br>-->
+          <select type="text" name="visa" placeholder="Enter visa status" class="form-control" class="name" id="visas">
+            <option value="" disabled selected hidden>Select option</option>
+            <option value="us">US Citizen</option>
+            <option value="canada">Canadian Citizen</option>
+            <option value="green">Green Card Holder</option>
+            <option value="needh1">Need H1 Visa</option>
+            <option value="haveh1">Have H1 Visa</option>
+            <option value="auth">Employment Auth. Documanet</option>
+            <option value="permit">TN Permit Holder</option>
+          </select>
+          <span id="visaerr" class="text-danger font-weight-bold"></span>
+         </div>
+         <button type="submit" class="form-control" id="sub">Save your profile</button>
+        </form>
+      </div>
+    </div>
+    <script type="text/javascript">
+        function validation()
+         {
+           var fuser=document.getElementById('fuser').value;
+           var luser=document.getElementById('luser').value;
+           var emails=document.getElementById('email').value;
+           var password=document.getElementById('pass').value;
+           var cpassword=document.getElementById('cpass').value;
+           var mobileNumber=document.getElementById('mobileno').value;
+           var location=document.getElementById('currentloc').value;
+           var jtitle=document.getElementById('jobt').value;
+           var experience=document.getElementById('exp').value;
+           var resume=document.getElementById('resume').value;
+           var dsalary=document.getElementById('sal').value;
+           var emptype=document.getElementById('emptype').value;
+           var willing=document.getElementById('reloc').value;
+           var vstatus=document.getElementById('visas').value;
+               if(fuser == ""){
+                      document.getElementById('usernamef').innerHTML="please enter firstname ";
+                      return false;
+                }
+                if((fuser.length <= 2) || (fuser.length>20)){
+                      document.getElementById('usernamef').innerHTML="Firsrname length must be in between 2 to 20";
+                      return false;
+                }
+                if(!isNaN(fuser)){
+                      document.getElementById('usernamef').innerHTML="please enter only characters";
+                      return false;
+                }
+                if(luser == ""){
+                      document.getElementById('usernamel').innerHTML="please enetr lastname";
+                      return false;
+                }
+                if((luser.length <= 2) || (luser.length>20)){
+                      document.getElementById('usernamel').innerHTML="Lastname length must be in between 2 to 20";
+                      return false;
+                }
+                if(!isNaN(luser)){
+                      document.getElementById('usernamel').innerHTML="Please enter only characters";
+                      return false;
+                }
+                if(emails == ""){
+                      document.getElementById('emailids').innerHTML="please enter email address";
+                      return false;
+                }
+                if(emails.indexOf('@') <= 0){
+                      document.getElementById('emailids').innerHTML="email should not start with @";
+                      return false;
+                }
+                if((emails.charAt(emails.length-4)!='.') && (emails.charAt(emails.length-3)!='.')){
+                      document.getElementById('emailids').innerHTML="Please enter valid email .";
+                      return false;
+                }
+                if((emails.charAt(emails.length-3)!='c') && (emails.charAt(emails.length-2)!='c')){
+                      document.getElementById('emailids').innerHTML="Please enter valid email .c";
+                      return false;
+                }
+                if(emails.charAt(emails.length-2)!='o'){
+                      document.getElementById('emailids').innerHTML="Please enter valid email .o";
+                      return false;
+                }
+                if(emails.charAt(emails.length-1)!='m'){
+                      document.getElementById('emailids').innerHTML="Please enter valid email .m";
+                      return false;
+                }
+                if(password.length < 6){
+                  document.getElementById('passids').innerHTML="Password length must be atleast 6";
+                  return false;
+                }
+                if(cpassword.length < 6||cpassword!==password){
+                  document.getElementById('cpassids').innerHTML="Please Enter above password";
+                  return false;
+                  }
+               if(mobileNumber == ""){
+                      document.getElementById('mobiles').innerHTML="please fill the mobile number field";
+                      return false;
+                }
+                if(isNaN(mobileNumber)){
+                      document.getElementById('mobiles').innerHTML="Only digits are allowed";
+                      return false;
+                }
+                if(mobileNumber.length!=10){
+                      document.getElementById('mobiles').innerHTML="mobile number must be only 10 digits";
+                      return false;
+                }
+                if(location == ""){
+                     document.getElementById('locationerr').innerHTML="please enter location ";
+                     return false;
+                }
+                if(jtitle == ""){
+                     document.getElementById('joberr').innerHTML="please enter job title ";
+                     return false;
+                }
+                if(!isNaN(jtitle)){
+                   document.getElementById('joberr').innerHTML="please enter only characters";
+                   return false;
+                }
+                if(experience == ""){
+                    document.getElementById('experr').innerHTML="please enetr your experience";
+                    return false;
+                }
+                if(isNaN(experience)){
+                   document.getElementById('experr').innerHTML="Only digits are allowed";
+                   return false;
+                }
+                if(resume == ""){
+                   document.getElementById('resumes').innerHTML="please upload the resume";
+                   return false;
+                 }
+                 if(dsalary == ""){
+                   document.getElementById('salaryerr').innerHTML="please fill desires salary";
+                   return false;
+                 }
+                if(isNaN(dsalary)){
+                 document.getElementById('salaryerr').innerHTML="Only digits are allowed";
+                 return false;
+                }
+                if(emptype == ""){
+                   document.getElementById('emptypeerr').innerHTML="please enter employment type ";
+                   return false;
+                }
+               if(willing == ""){
+                 document.getElementById('relocateerr').innerHTML="please enter this field ";
+                 return false;
+               }
+               if(vstatus == ""){
+                 document.getElementById('visaerr').innerHTML="please enter visa status ";
+                 return false;
+               }
+            }
+       </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $(function(){
+      var navbar= $('.header-inner');
+      $(window).scroll(function(){
+        if($(window).scrollTop() <=40 ){
+          navbar.removeClass('navbar-scroll');
+        }else{
+          navbar.addClass('navbar-scroll');
+        }
+      });
+    });
+  </script>
+    </body>
+    </html>

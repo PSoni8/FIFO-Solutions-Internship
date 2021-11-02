@@ -1,0 +1,215 @@
+body{
+    margin: 0;
+    font-family: "museo_sans_300";
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #fff;
+    flex-direction: column;
+    align-items: center;
+
+}
+.a{
+    max-width:100%;
+    height: auto;
+}
+header.header.hero.dc-category {
+    min-height: 300px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: -15px;
+    margin-right: -15px;
+    overflow: hidden;
+    margin-top: 30px;
+}
+/* #card1 {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%, 50%;
+    border: none;
+} */
+
+
+.btn:hover{
+    color:white
+}
+.overlay  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.781);
+    background-color: #e3e3e3;
+    z-index: 1
+  }
+  .button:hover {
+    background-color: white; /* Green */
+    color: white;
+  }
+ a{
+    color: #657008 !important;
+    ;
+    text-decoration: none;
+    background-color: transparent;
+}
+.btn-btn-primary {
+    background-color: #657008 !important;
+    color: white !important;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+/* @media (min-width: 640px) { body {font-size:1rem;} }  */
+
+.wrapper {
+
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  /*.slider {
+    width: 1200px;
+    height: 100px;
+    position: relative;
+    background: white;
+    box-shadow: 0 10px 20px 10px rgba(0,0,0,1.7);
+    overflow:hidden;
+    margin-left: 0;
+    padding-left: 1px;
+
+  }*/
+   .head h1{
+    padding-top: 2rem;
+    font-size: 3rem;
+    font-family: "veradana" bold;
+      text-align: center;
+      color: blue;
+  }
+  .slider1 {
+    height: 10px;
+    display: flex;
+    align-items: center;
+  }
+  .slide2 img {
+
+    height: 60px;
+    padding: 0px 10px 0 10px;
+
+
+  }
+
+  /*section6*/
+  .section-6 .containerarrary{
+    background-image: url('../images/land.jpg');
+    background-size: cover;
+    height: 40rem;
+
+  }
+  .section-6 .heading-1{
+    font-size: 2rem;
+    margin-top: 10%;
+    margin-left: 2%;
+    margin-bottom: 4%;
+    font-family: 'veradana';
+    width: 100%;
+    color: black !important;
+    text-align: center;
+  }
+  .section-6 .para{
+    width: 100%;
+    font-family: 'veradana';
+    color: white;
+    margin-bottom: 7%;
+    text-align: center;
+  }
+    .form-div{
+    font-size: 0.9rem;
+      margin-left: 15rem;
+      width: 50rem;
+      height: 4rem;
+  }
+  .form-input{
+    text-align: center;
+      margin-top: 2rem;
+      margin-left: 50rem;
+      background-color:#657008;
+      color: white;
+      font-size: 1.6rem;
+      width: 15rem;
+      height: 3rem;
+  }
+
+  .section-6 .btn{
+    margin-bottom: 15%;
+    width:20%;
+    margin-left: 40%;
+    padding: 2% 5%;
+    background-color: orange;
+  }
+
+
+
+
+.footer{
+    padding-top:0;
+    background: #152F4F !important;
+    color:white;
+    }
+    .links
+      ul {
+        list-style-type: none;
+      }
+      li a{
+        font-size: 1.6rem;
+        color: white;
+        transition: color .2s;
+      }
+        &:hover{
+          text-decoration:none;
+          color:#4180CB;
+          }
+      }
+    }
+    .about-company{
+      i{font-size: 25px;}
+      a{
+        color:white;
+        transition: color .2s;
+        &:hover{color:#4180CB}
+      }
+    }
+
+    .about-company h3{
+      padding-top: 1rem;
+     font-size: 1.9rem;
+    }
+    .social{
+      font-size: 1.9rem;
+      padding-left: 50px;
+      color:#657008;
+    }
+    .links li a{
+      font-size: 1.9rem;
+    }
+    .social h3{
+      font-size: 1.9rem;
+    }
+   .rounded-social-buttons a{
+    color: #657008;
+   }
+    .location{
+      i{font-size: 18px;}
+    }
+    .copyright p{
+
+      border-top:1px solid rgba(255,255,255,.1);
+    }
+  }
